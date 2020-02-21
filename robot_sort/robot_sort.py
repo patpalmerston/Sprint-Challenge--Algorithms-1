@@ -98,29 +98,35 @@ class SortingRobot:
         """
         Sort the robot's list.
         """
+        # Fill this out
+        # Fill this out
+        # turn on boolean which is like a swapping boolean for a bubble sort
+
+        # While the boolean is True outside of the loop
+
+        # Turn boolean to false at the beginning of each loop, if we no longer swap than we break out of the loop
+
         # need to move in both directions
-        while self.can_move_right():
-            # need initial item
-            self.swap_item()
-            # then move right into the list
-            self.move_right()
-            # at this point I am holding a value sittin on none and now need to compare to the next item
-            if self.compare_item() == 1:
-                # if the value is greater that what I hold then swap
-                self.swap_item()
-                # Take the new lesser valued item back to the left
-                self.move_left()
-                # now swap that value with the value of None
-                self.swap_item()
-            # other wise we want to take the lower value item and put it back, and grab None again
-            else:
-                self.move_left()
-                self.swap_item()
-            # We need to move right through on every iteration of the loop
-            self.move_right()
+
+        # need initial item
+
+        # then move right into the list
+
+        # at this point I am holding a value sittin on none and now need to compare to the next item
+
+        # if the value is greater that what I hold then swap
+
+        # Turn on boolean every time we swith a lower value with a higher Value
+
+        # Take the new lesser valued item back to the left
+
+        # now swap that value with the value of None
+
+        # other wise we want to take the lower value item and put it back, and grab None again
+
+        # We need to move right through on every iteration of the loop
+
         # if we can not move to the right but can move to the left we need that loop
-        while self.can_move_right():
-            self.move_left()
 
 
 # -   It can move left or right.
